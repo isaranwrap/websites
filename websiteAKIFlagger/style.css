@@ -41,6 +41,28 @@ div {
     box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
 }
 
+:root {
+    --grid-cols: 4;
+    --grid-rows: 4;
+}
+
+#container {
+    /* background-color: #0088a9; */
+    background-color: #c57e65;
+    width: 100px;
+	display: grid;
+	grid-template-columns: repeat(var(--grid-cols), 1fr);
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-gap: 1em;
+}
+
+.grid-item {
+    padding: 1em;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+
 .logo {
     cursor: pointer;
 }
