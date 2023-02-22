@@ -1,0 +1,13 @@
+
+/* Here's some js */
+
+
+fetch('https://isaranwrap.com/', {
+    method: 'POST';
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+        return res.json()
+    /* }). */
+    }).then

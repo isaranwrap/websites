@@ -1,0 +1,148 @@
+*
+{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background: #607fff; */
+    background: #607d8b;
+}
+
+.container
+{
+    position: relative;
+    /* top: 50px; */
+    top: 30px;
+    text-emphasis: none;
+    text-align: center;
+}
+
+/* .taza */
+.te
+{
+    position: relative;
+    width: 280px;
+    height: 280px;
+    background: linear-gradient(to right, #f9f9f9, #d9d9d9);
+    border-bottom-left-radius: 45%;
+    border-bottom-right-radius: 45%;
+    /* border-top-left-radius: 45%; */
+}
+/* note the beautiful left and right gradient(s) to create 3d effects */
+.top
+{
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(to right, #f9d9f9, #d9d9d9);
+    border-radius: 50%;
+    /* #000080 navy blue */
+}
+
+.circle
+{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: calc(100% - 20px);
+    height: 50px;
+    background: linear-gradient(to left, #f9f9f9, #d9d9d9);
+    border-radius: 50%;
+    box-sizing: border-box;
+    /* after we downshift top */
+    overflow: hidden;
+}
+
+.water
+{
+    position: absolute;
+    /* top: 0; */
+    top: 20px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* 
+    /* te negro  */
+    background: linear-gradient(#c57e65, #654321); 
+    /* te verde 
+    background: linear-gradient(#E5E283, #B1CBA6); */
+    border-radius: 50%;
+}
+
+
+ @media .handle 
+{
+    /* first */
+    position: absolute;
+    /* right: 0; */
+    right: -60px;
+    /* top: 0; */
+    top: 40px;
+    width: 140px;
+    height: 160px;
+    /* border: 20px solid #000; */
+    border: 20px solid #dcdcdc;
+    border-left: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-radius: 50%;
+    transform: rotate(42deg);
+    
+} 
+
+
+.plate
+{
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    /* transform: translate(-50px); */
+    transform: translateX(-50%);
+    width: 500px;
+    height: 200px;
+    background: linear-gradient(to right, #f9f9f9, #e7e7e7);
+    border-radius: 50%;
+    box-shadow: 0 35px 35px rgba(0,0,0,0.2);
+}
+
+/* 5:20 */
+.plate::before
+{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 50%;
+    background: linear-gradient(to left, #f9f9f9, #e7e7e7);
+}
+.plate::after
+{
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    right: 30px;
+    bottom: 30px;
+    /* background: linear-gradient(rgba(0,0,0,0.2) 25%, transparent, transparent); */
+    /* border-radius: 50%; */
+    background: radial-gradient(rgba(0,0,0,0.2) 25%, transparent, transparent);
+    border-radius: 50%;
+}
+
+.vapour
+{
+    position: relative;
+    display: flex;
+    z-index: 1;
+    padding: 0 2px;
+}
